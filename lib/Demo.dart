@@ -70,3 +70,16 @@ class _DemoState extends State<Demo> {
       ),
     );
   }
+ void calculateBMI(){
+    double height = double.parse(_heightController.text)/100;
+    double weight = double.parse(_weightController.text);
+
+    double heightSquare = height * height;
+    double result = weight / heightSquare;
+    _result = result;
+    setState(() {
+      
+    });
+      
+    }
+  }
